@@ -1,6 +1,8 @@
 {
     "name": "skywalker-labs/entrust",
     "description": "A flexible Role-based Permissions package for Laravel 10, 11, and 12.",
+    "type": "library",
+    "license": "MIT",
     "keywords": [
         "laravel",
         "auth",
@@ -8,11 +10,29 @@
         "acl",
         "permission"
     ],
-    "license": "MIT",
+    "homepage": "https://github.com/skywalker-labs/entrust",
+    "support": {
+        "issues": "https://github.com/skywalker-labs/entrust/issues",
+        "source": "https://github.com/skywalker-labs/entrust"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/ermradulsharma"
+        }
+    ],
     "authors": [
         {
-            "name": "Skywalker Labs",
-            "email": "skywalkerlknw@gmail.com"
+            "name": "Skywalker Labs Team",
+            "email": "skywalkerlknw@gmail.com",
+            "homepage": "https://skywalker-labs.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Mradul Sharma",
+            "email": "skywalkerlknw@gmail.com",
+            "homepage": "https://mradulsharma.vercel.app/",
+            "role": "Lead Developer"
         }
     ],
     "require": {
@@ -34,6 +54,11 @@
             "Skywalker\\Entrust\\": "src/Entrust/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/Middleware/MiddlewareTest.php"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -44,10 +69,6 @@
             }
         }
     },
-    "autoload-dev": {
-        "classmap": [
-            "tests/Middleware/MiddlewareTest.php"
-        ]
-    },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
